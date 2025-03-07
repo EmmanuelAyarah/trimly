@@ -1,0 +1,514 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #222;
+    height: 100vh;
+    color: white;
+}
+
+header {
+    background: #222;
+    padding: 30px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    position: fixed;
+    width: 100%;
+    transition: top 0.3s;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo img {
+    width: 170px;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 1px auto;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-links li a {
+    color: grey;
+}
+
+.nav-links .btn {
+    color: #222;
+}
+
+.btn {
+    background: linear-gradient(to bottom, #00FF95, #00D4FF);
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    margin: 0 10px;
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.hero-content {
+    max-width: 50%;
+}
+
+.hero-content h2 {
+    color: linear-gradient(to bottom, #00FF95, #00D4FF);
+}
+
+.hero-content {
+    max-width: 50%;
+    position: relative;
+    z-index: 2;
+}
+
+.hero-content .subheading {
+    font-size: 48px;
+    font-weight: bold;
+    background: linear-gradient(to bottom, #00FF95, #00D4FF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    margin-top: 50px;
+}
+
+.hero-content h2 {
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 1.3;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #cccccc;
+}
+
+.hero-content strong {
+    color: #ffffff;
+}
+
+.cta-button {
+    display: inline-block;
+    background: linear-gradient(to bottom, #00FF95, #00D4FF);
+    color: #0d0d0d;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.trial-info {
+    font-size: 14px;
+    color: #888888;
+    margin-top: 10px;
+}
+
+.hero-image {
+    position: relative;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image::before {
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(to bottom, #00FF95, #00D4FF);
+    ;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.hero-image video {
+    width: 50%;
+    height: auto;
+    border-radius: 20px;
+    background-clip: inherit;
+}
+
+/* Stats Section */
+.stats-section {
+    margin-top: -60px;
+}
+
+.stats-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 2px solid #00FF95;
+    border-radius: 10px;
+}
+
+.stats-box {
+    padding: 20px;
+    text-align: left;
+    width: 50%;
+    text-align: center;
+}
+
+
+.stats-box h2 {
+    font-size: 40px;
+    font-weight: bold;
+    padding: 0;
+
+
+}
+
+.stats-box p {
+    margin-top: 40px;
+    font-size: 20px;
+    color: #bbb;
+}
+
+.trusted-box h2 {
+    text-align: center;
+    margin-top: -30px;
+}
+
+.highlight {
+    background: linear-gradient(to bottom, #00FF95, #00D4FF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+
+.stats-numbers {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.stats-line {
+    width: 25px;
+    height: 1px;
+    background-color: #3cac7d;
+    margin: 8px auto;
+}
+
+.number-box {
+    text-align: center;
+}
+
+.number-box h3 {
+    font-size: 28px;
+    color: #00FF95;
+    font-weight: bold;
+}
+
+.number-box p {
+    font-size: 14px;
+    color: #bbb;
+}
+
+.signature-img {
+    width: 100px;
+    height: auto;
+    margin: 0 20px;
+}
+
+
+
+/* css for the carousel section */
+
+
+.carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    /* max-width: 1000px; */
+    width: 100%;
+    margin: 50px auto;
+    position: relative;
+    flex-direction: row;
+
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.testimonial-card {
+    background-color: #1c1c1c;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    width: 300px;
+    height: 500px;
+}
+
+.testimonial-card iframe {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.testimonial-text {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #fff;
+}
+
+.testimonial-author {
+    font-weight: bold;
+    margin-top: 10px;
+    color: #fff;
+}
+
+.testimonial-role {
+    font-style: italic;
+    color: #fff;
+}
+
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+/* carousel ends */
+
+
+/* css for the second hero starts */
+
+
+/* css for the second hero starts */
+.hero2 {
+    border: #00d4ff;
+    width: 100%;
+}
+
+.card-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+
+    margin: 10px auto;
+}
+
+.card-img {
+    width: 100%;
+    max-height: 200px;
+    margin: 10px auto;
+}
+
+.card-img>img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* css old and new buttons  */
+.new, .old{
+    background: linear-gradient(to bottom, #00FF95, #00D4FF);
+    border-radius: 15px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 170px;
+    height: 29px;
+    padding: 5px 10px;
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+    word-spacing: 5px;
+}
+
+.old{
+    background:#313131;
+    color: #fff;
+}
+
+
+.card {
+    background: #1a1a1a;
+    padding: 50px;
+    border-radius: 10px;
+    width: 600px;
+    text-align: left;
+    max-height: 30%;
+    color: #fff;
+    text-align: left;
+}
+
+.card h3 {
+    margin: 30px;
+    text-align: center;
+}
+
+.negative {
+    border: 1px solid #cccccc;
+}
+
+.positive {
+    border: 2px solid green;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 100px;
+}
+
+ul li {
+    margin: 10px 0;
+    padding: 10px;
+}
+
+.cta {
+    margin-top: 20px;
+}
+
+.cta button {
+    background: linear-gradient(to bottom, #00FF95, #00D4FF);
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* css for sec ond hero ends */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
+} */
+
+
+
+/* @media (max-width: 800px) {
+    .page-wrapper {
+        flex: 50%;
+        max-width: 50%;
+
+    }
+
+    .hero {
+        height: 400px;
+        flex: 100%;
+        flex-direction: column;
+        flex-wrap: wrap;
+        border: 10px solid red;
+    }
+} */
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+/* @media (max-width: 600px) {
+    .hero {
+        flex: 100%;
+        max-width: 100%;
+        flex-direction: column;
+    }
+} */

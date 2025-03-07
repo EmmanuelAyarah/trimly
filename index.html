@@ -4,94 +4,163 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GetBarbr - Clean HTML/CSS Clone</title>
-    <link rel="stylesheet" href="styles.css">
-
+    <title>TRIMLY</title>
+    
+    <link rel="stylesheet" href="trimly.css">
 </head>
 
 <body>
-    <div class="page-wrapper">
-        <header>
-            <nav>
-                <div class="logo">
-                    <img src="./images/barber-logo.svg" alt="Barbr Logo">
+    <header id="navbar">
+        <nav class="navbar">
+            <div class="logo"><img src="./images/TRIMLY OUT transp.png" alt="TRIMLY"></div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#faqs">FAQS</a></li>
+                <li><a href="#login" class="btn">Try Bar for free</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero">
+        <div class="hero-content">
+            <p class="subheading">BUILT FOR BARBERS</p>
+            <h2>Simplify bookings, attract new clients and boost your income</h2>
+            <p>We’ll take care of your <strong>schedule</strong>, build your <strong>reputation</strong> and help you
+                <strong>grow</strong> so you can spend more time doing what you <strong>love</strong>.
+            </p>
+            <p>Say goodbye to time-consuming admin, struggling to find clients and expensive booking systems.</p>
+            <p><strong>Grow your business. Simplify bookings.<br>Save 2h/day. Only £20/mo.</strong></p>
+            <a href="#" class="cta-button">Try Barbr for free</a>
+            <p class="trial-info">30-day free trial. Cancel anytime</p>
+        </div>
+        <div class="hero-image">
+            <video id="a65ee68a-decb-2a7c-63b8-1d77c06262b1-video" autoplay="" loop=""
+                style="background-image:url(&quot;https://cdn.prod.website-files.com/5ef76950188c031749a0e6dc/64b88fea775baaccaced2dc0_355374c6-2bd0-4fee-9a85-5b97a2303106 (online-video-cuttercom) (1)-poster-00001.jpg&quot;)"
+                muted="" playsinline="" data-wf-ignore="true" data-object-fit="cover">
+                <source
+                    src="https://cdn.prod.website-files.com/5ef76950188c031749a0e6dc/64b88fea775baaccaced2dc0_355374c6-2bd0-4fee-9a85-5b97a2303106 (online-video-cuttercom) (1)-transcode.mp4"
+                    data-wf-ignore="true">
+                <source
+                    src="https://cdn.prod.website-files.com/5ef76950188c031749a0e6dc/64b88fea775baaccaced2dc0_355374c6-2bd0-4fee-9a85-5b97a2303106 (online-video-cuttercom) (1)-transcode.webm"
+                    data-wf-ignore="true">
+            </video>
+        </div>
+    </section>
+    <section class="stats-section">
+        <div class="stats-container">
+            <div class="stats-box">
+                <h2><span class="highlight">Everything you need</span> to succeed as a barber</h2>
+                <div class="box-text">
+                    <p>Build your <strong>brand</strong>, earn <strong>reputation</strong>, become more
+                        <strong>productive</strong> and <strong>grow</strong> your client base. Level up your barber
+                        game today.
+                    </p>
                 </div>
-                <ul class="nav-links">
-                    <li><a href="#About">About</a></li>
-                    <li><a href="#features">Features</a></li>
-                    <li><a href="#pricing">Pricing</a></li>
-                    <li><a href="#contact">FAQ</a></li>
-                </ul>
-                <button id="btn"><a href="#signup" class="btn">Try Barbr for free</a></button>
-            </nav>
-        </header>
 
-        <section class="hero">
-            <div class="hero-content1">
+            </div>
+            <img src="./images/signature.svg" alt="Signature" class="signature-img">
 
-                <div>BUILT FOR BARBERS</div>
-
-                <h1>Simplify bookings, attract new clients and boost your income</h1>
-
-                <p>We'll take care of your
-                    <span class="bold-white">schedule</span>,
-                    build your <span class="bold-white">reputation</span> and help
-                    you
-                    <span class="bold-white">grow</span>
-                    so you can spend more time doing what you
-                    <span class="bold-white">love</span>.
-                </p>
-
-                <p>Say goodbye to time-consuming admin, struggling to find clients and expensive booking systems.</p>
-                <p>Grow your business. Simplify bookings. Save 2h/day. Only £20/mo.</p>
-                <button id="btn" class="hero-btn"><a href="#signup" class="btn">Get Started</a></button>
-            </div>
-            <div class="hero-content2">
-                <!-- <img src="./images/video-border.png" class="video-border" alt=""> -->
-                <video src="./videos/trimly.mp4" class="video" controls loop autoplay>
-                    <source src="./videos/trimly.mp4" type="video/mp4">
-                </video>
-            </div>
-        </section>
-
-        <section id="features" class="features">
-            <div class="feature">
-                <p>Everything you need to succed as a barber</h1>
-                <p>Build your <span class="bold-white">brand</span>, earn <span class="bold-white">reputation</span>,
-                    become more <span class="bold-white">productive</span>
-                    and <span class="bold-white">grow</span> your client base. Level up your barber game today.</p>
-            </div>
-            <div class="feature">
-                <img src="./images/sign.svg" alt="">
-            </div>
-            <div class="feature">
-                <h2>Trusted by 250+ barbers across 7 countries</h2>
-            </div>
-        </section>
-
-        <div class="stats">
-            <div>
-                <div>250+</div>
-                <div>Barbers</div>
-            </div>
-            <div>
-                <div>£1M+</div>
-                <div>Processed</div>
-            </div>
-            <div>
-                <div>50,000+</div>
-                <div>Bookings</div>
-            </div>
-            <div>
-                <div>22,000+</div>
-                <div>Clients</div>
+            <div class="stats-box trusted-box">
+                <h2>Trusted by <span class="highlight">250+ <br> barbers </span> across <span class="highlight">7
+                        countries</span></h2>
             </div>
         </div>
-
-        <footer>
-            <p>&copy; 2025 GetBarbr. All rights reserved.</p>
-        </footer>
+        <div class="stats-numbers">
+            <div class="number-box">
+                <h3>250+</h3>
+                <div class="stats-line"></div>
+                <p>Barbers</p>
+            </div>
+            <div class="number-box">
+                <h3>£1M+</h3>
+                <div class="stats-line"></div>
+                <p>Processed</p>
+            </div>
+            <div class="number-box">
+                <h3>50,000+</h3>
+                <div class="stats-line"></div>
+                <p>Bookings</p>
+            </div>
+            <div class="number-box">
+                <h3>22,000+</h3>
+                <div class="stats-line"></div>
+                <p>Clients</p>
+            </div>
+        </div>
+    </section>
+    <div class="carousel-container">
+        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+        <div class="carousel" id="carousel">
+            <div class="testimonial-card">
+                <iframe src="https://www.youtube.com/embed/video1" allowfullscreen></iframe>
+                <p class="testimonial-text">"If I tried to scale up without Barbr, it would have taken me at least 5
+                    years. <strong>I can’t imagine working without it.</strong>"</p>
+                <p class="testimonial-author">DAYTRIMS</p>
+                <p class="testimonial-role">Private Studio Barber</p>
+            </div>
+            <div class="testimonial-card">
+                <iframe src="https://www.youtube.com/embed/video2" allowfullscreen></iframe>
+                <p class="testimonial-text">"When I added bookings, I saw faces I never saw before. Makes life a lot
+                    easier."</p>
+                <p class="testimonial-author">ACE</p>
+                <p class="testimonial-role">Owner of Ace Grooming Room</p>
+            </div>
+            <div class="testimonial-card">
+                <iframe src="https://www.youtube.com/embed/video3" allowfullscreen></iframe>
+                <p class="testimonial-text">"I hate admin. I got 2 hours of my life back a day thanks to Barbr. I’m
+                    a customer for life."</p>
+                <p class="testimonial-author">BluFadez</p>
+                <p class="testimonial-role">Owner of Blufadez Barbershop</p>
+            </div>
+        </div>
+        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+        <button class="prev" onclick="moveSlide(-1)">&#10095;</button>
     </div>
+
+    <section class="hero2">
+        <h2>You have two options...</h2>
+        <div class="card-container">
+            <div class="card negative">
+                <button class="old">THE OLD WAY</button>
+                <h3>Manage everything yourself</h3>
+                <div class="card-img">
+                    <img src="./images/trimly2.png" alt="">
+                </div>
+               
+                <ul>
+                    <li>&#10060; Endless admin. Waste a bunch of time.</li>
+                    <li>&#10060; Struggle to find clients. Try random strategies and hope for the best.</li>
+                    <li>&#10060; Expensive booking systems. Get charged a huge monthly fee + hidden fees.</li>
+                    <li>&#10060; No insights. No analytics on revenue / clients / performance and no way to set or measure goals.</li>
+                    <li>&#10060; No personal brand. Remain unknown with no reputation and never reach your full potential.</li>
+                    <li>&#10060; Limited earnings. Struggle to raise prices because you’re not fully booked and wasting time on admin.</li>
+                    <li>&#10060; No control. If you change shops, lose all your clients, data and everything you’ve worked so hard for.</li>
+                </ul>
+            </div>
+            <div class="card positive">
+                <button class="new">THE NEW WAY</button>
+                <h3>Trimly manages your schedule and growth</h3>
+                <div class="card-img">
+                    <img src="./images/trimly3.png" alt="">
+                </div>
+                <ul>
+                    <li>&#9989;No more admin. Barbr takes care of your scheduling, bookings, clients, analytics and payments.</li>
+                    <li>&#9989; Attract more clients. Get a personalised profile, run promotions and let clients book in seconds.</li>
+                    <li>&#9989; Affordable. Just £20 / mo and FREE if you're doing under 25 bookings / month.</li>
+                    <li>&#9989; Simple analytics. See all your data, clients and performance so you can measure progress and set goals.</li>
+                    <li>&#9989; Build your personal brand. Get your own profile link, reviews and charge higher prices with a strong brand.</li>
+                    <li>&#9989; Become fully booked. Optimise your schedule, run smart promotions and secure recurring bookings.</li>
+                    <li>&#9989; Raise prices. Once you’re fully booked, we’ll help you raise your prices in the most profitable way..</li>
+                </ul>
+            </div>
+        </div>
+        <div class="cta">
+            <button>Try Barbr for free</button>
+        </div>
+    </section>
+
+
 </body>
 
 </html>
