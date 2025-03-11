@@ -14,7 +14,7 @@ body {
 header {
     background: #222;
     padding: 30px;
-    margin-top: 20px;
+    /* margin-top: 20px; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -342,19 +342,33 @@ header {
 
 /* css for the second hero starts */
 .hero2 {
-    border: #00d4ff;
+    /* border: 2px solid #00d4ff; */
     width: 100%;
 }
 
+.heading2 {
+    font-size: 40px;
+    margin: 1px 400px 80px;
+    /* text-align: center; */
+    color: #00FF95;
+}
+
 .card-container {
-    width: 100%;
+    /* width: 100%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     gap: 20px;
     flex-wrap: wrap;
 
-    margin: 10px auto;
+    margin: 10px auto; */
+
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    /* Ensures all items have the same height */
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
 .card-img {
@@ -370,7 +384,8 @@ header {
 }
 
 /* css old and new buttons  */
-.new, .old{
+.new,
+.old {
     background: linear-gradient(to bottom, #00FF95, #00D4FF);
     border-radius: 15px;
     align-items: center;
@@ -384,21 +399,24 @@ header {
     word-spacing: 5px;
 }
 
-.old{
-    background:#313131;
+.old {
+    background: #313131;
     color: #fff;
 }
 
 
 .card {
+    /* display: flex;
+    flex: 1;
+    flex-direction: column; */
     background: #1a1a1a;
-    padding: 50px;
+    padding: 30px;
     border-radius: 10px;
     width: 600px;
-    text-align: left;
-    max-height: 30%;
+    /* text-align: center; */
+    /* height: ; */
     color: #fff;
-    text-align: left;
+    align-items: stretch;
 }
 
 .card h3 {
@@ -411,7 +429,7 @@ header {
 }
 
 .positive {
-    border: 2px solid green;
+    border: 1px solid green;
 }
 
 ul {
@@ -422,21 +440,46 @@ ul {
 
 ul li {
     margin: 10px 0;
-    padding: 10px;
+    padding: 5px;
+    text-align: left;
+
+    display: flex;
+    align-items: flex-start;
+    /* Align icon with the start of text */
+    gap: 8px;
+    /* Space between icon and text */
+}
+
+.card>ul li::before {
+    content: "⛬";
+    /* Change to ❌ or any icon you need */
+    color: #fff;
+    /* Change to red for negative points */
+    font-size: 18px;
+    min-width: 20px;
+    /*Ensures consistent spacing.*/
 }
 
 .cta {
+    display: flex;
+    flex-direction: column;
     margin-top: 20px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
 }
 
 .cta button {
     background: linear-gradient(to bottom, #00FF95, #00D4FF);
     color: #000;
     border: none;
-    padding: 10px 20px;
+    padding: 15px 20px;
     border-radius: 5px;
     font-size: 16px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
     cursor: pointer;
+    margin-bottom: 10PX;
 }
 
 /* css for sec ond hero ends */
@@ -444,22 +487,345 @@ ul li {
 
 
 
+.heading3-container {
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+
+
+
+.heading3-container .heading3 {
+    font-size: 28px;
+    color: #00ff99;
+    margin: 70px 10px 30px;
+}
+
+
+
+/* Section Layout for hero3*/
+.hero3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px;
+    gap: 50px;
+}
+
+/* Image Container */
+.mockup-div {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mockup-div img {
+    width: 90%;
+    max-width: 600px;
+    border-radius: 20px;
+}
+
+/* Text Content */
+.easy-booking {
+    flex: 1;
+    max-width: 500px;
+}
+
+
+.text-container .sub-heading {
+    font-size: 14px;
+    font-weight: bold;
+    color: #00ff99;
+    text-transform: uppercase;
+}
+
+.text-container h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+/* Feature Cards */
+.feature-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.feature-card h3 {
+    color: #00ff99;
+    margin-bottom: 5px;
+}
+
+.feature-card p {
+    font-size: 14px;
+} 
+
+/* css for hero3 ends */
+
+
+
+
+/* layout for hero4 */
+
+.hero4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px;
+    gap: 50px;
+}
+
+
+/* Text Content */
+.easy-booking4 {
+    flex: 1;
+    max-width: 500px;
+}
+
+
+.text-container4 .sub-heading4 {
+    font-size: 14px;
+    font-weight: bold;
+    color: #00ff99;
+    text-transform: uppercase;
+}
+
+.text-container4 h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+/* Feature Cards */
+.feature-card4 {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.feature-card4 h3 {
+    color: #00ff99;
+    margin-bottom: 5px;
+}
+
+.feature-card4 p {
+    font-size: 14px;
+}
+
+
+/* Image Container */
+.mockup-div4 {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mockup-div4 img {
+    width: 90%;
+    max-width: 400px;
+    border-radius: 20px;
+}
+
+/* layout for hero 4 ends */
+
+
+
+
+
+/* layout for hero5 */
+
+.hero5 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px;
+    gap: 50px;
+}
+
+
+/* Image Container */
+.mockup-div5 {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mockup-div5 img {
+    width: 90%;
+    max-width: 400px;
+    border-radius: 20px;
+}
+
+
+/* Text Content */
+.easy-booking5 {
+    flex: 1;
+    max-width: 500px;
+}
+
+
+.text-container5 .sub-heading5 {
+    font-size: 14px;
+    font-weight: bold;
+    color: #00ff99;
+    text-transform: uppercase;
+}
+
+.text-container5 h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+/* Feature Cards */
+.feature-card5 {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.feature-card5 h3 {
+    color: #00ff99;
+    margin-bottom: 5px;
+}
+
+.feature-card5 p {
+    font-size: 14px;
+}
+
+
+/* layout for hero 5 ends */
+
+
+/* Layout for Hero 6 starts */
+
+.hero6 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: stretch;
+    padding: 60px;
+    gap: 50px;
+}
+
+
+
+/* Image Container */
+.mockup-div6 {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mockup-div6 img {
+    width: 90%;
+    max-width: 400px;
+    border-radius: 20px;
+}
+
+
+/* Text Content */
+.easy-booking6 {
+    flex: 1;
+    max-width: 500px;
+}
+
+
+.text-container6 .sub-heading6 {
+    font-size: 14px;
+    font-weight: bold;
+    color: #00ff99;
+    text-transform: uppercase;
+}
+
+.text-container6 h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+/* Feature Cards */
+.feature-card6 {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.feature-card6 h3 {
+    color: #00ff99;
+    margin-bottom: 5px;
+}
+
+.feature-card6 p {
+    font-size: 14px;
+}
+
+.switch{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 0px;
+    flex-basis: 100%;  /* Forces the third div to a new row */
+}
+
+.switch #switchbtn{
+    background: linear-gradient(to bottom, #00FF95, #00D4FF);
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: #0d0d0d;
+    text-decoration: none;
+    margin-top: 20px;
+    border: none;
+}
+
+
+.switch #switchp1{
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+
+.switch #switchp2{
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+
+.switch #switchp3{
+    font-size: 10px;
+    margin-top: 5px;
+}
+
+.switch > h1{
+    font-size: 30px;
+    font-weight: bold;
+    background: linear-gradient(to bottom, #00FF95, rgb(78, 174, 142));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.switch > h2{
+    font-size: 40px;
+    font-weight: bold;
+    background: linear-gradient(to bottom, #00FF95, #000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
+/* layout for hero 6 ends */
 
 
 
@@ -501,6 +867,24 @@ ul li {
         flex-direction: column;
         flex-wrap: wrap;
         border: 10px solid red;
+    }
+} */
+
+
+
+/* Responsive Design */
+/* @media (max-width: 900px) {
+    .booking-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .image-container img {
+        width: 70%;
+    }
+
+    .text-container {
+        max-width: 90%;
     }
 } */
 
