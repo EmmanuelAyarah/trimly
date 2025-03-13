@@ -560,7 +560,7 @@ ul li {
 
 .feature-card p {
     font-size: 14px;
-} 
+}
 
 /* css for hero3 ends */
 
@@ -710,6 +710,7 @@ ul li {
     justify-content: stretch;
     padding: 60px;
     gap: 50px;
+    background: #1a1a1a;
 }
 
 
@@ -765,16 +766,17 @@ ul li {
     font-size: 14px;
 }
 
-.switch{
+.switch {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 80px 0px;
-    flex-basis: 100%;  /* Forces the third div to a new row */
+    flex-basis: 100%;
+    /* Forces the third div to a new row */
 }
 
-.switch #switchbtn{
+.switch #switchbtn {
     background: linear-gradient(to bottom, #00FF95, #00D4FF);
     padding: 10px 20px;
     border-radius: 5px;
@@ -787,24 +789,24 @@ ul li {
 }
 
 
-.switch #switchp1{
+.switch #switchp1 {
     font-size: 15px;
     margin-top: 10px;
 }
 
 
-.switch #switchp2{
+.switch #switchp2 {
     font-size: 12px;
     margin-top: 10px;
 }
 
 
-.switch #switchp3{
+.switch #switchp3 {
     font-size: 10px;
     margin-top: 5px;
 }
 
-.switch > h1{
+.switch>h1 {
     font-size: 30px;
     font-weight: bold;
     background: linear-gradient(to bottom, #00FF95, rgb(78, 174, 142));
@@ -812,7 +814,7 @@ ul li {
     -webkit-text-fill-color: transparent;
 }
 
-.switch > h2{
+.switch>h2 {
     font-size: 40px;
     font-weight: bold;
     background: linear-gradient(to bottom, #00FF95, #000);
@@ -820,17 +822,340 @@ ul li {
     -webkit-text-fill-color: transparent;
 }
 
-
-
-
-
-
 /* layout for hero 6 ends */
 
 
 
 
 
+/* google download styling */
+
+
+
+.container8 {
+    display: flex;
+    width: 100vw;
+    /* Full width of the viewport */
+    height: 100vh;
+    /* Full height of the viewport */
+    align-items: center;
+    justify-content: space-between;
+    background: #000;
+}
+
+/* LEFT SIDE */
+.left {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.phone {
+    width: 320px;
+    transform: rotate(-5deg);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* RIGHT SIDE */
+.right {
+    flex: 1;
+    text-align: left;
+    padding-left: 50px;
+}
+
+h3 {
+    color: #00ffcc;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 1.3;
+    margin: 10px 0 20px;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.buttons img {
+    width: 150px;
+}
+
+
+
+/* layout for hero7 */
+
+.hero7 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px;
+    gap: 50px;
+}
+
+.mockup-div7>.faq {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: left;
+    /* color: #00ff99;; */
+}
+
+
+/* Image Container */
+.mockup-div7 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mockup-div7 img {
+    width: 90%;
+    max-width: 400px;
+    border-radius: 20px;
+}
+
+
+/* Text Content */
+.easy-booking7 {
+    flex: 1;
+    max-width: 500px;
+}
+
+
+.text-container7 .sub-heading7 {
+    font-size: 14px;
+    font-weight: bold;
+    color: #00ff99;
+    text-transform: uppercase;
+}
+
+.text-container7 h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+/* Feature Cards */
+.feature-card7 {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.feature-card7 h3 {
+    color: #00ff99;
+    margin-bottom: 5px;
+}
+
+.feature-card7 p {
+    font-size: 14px;
+}
+
+/* layout for hero 7 ends */
+
+
+
+/*css  Layout 9 starts */
+
+.container9 {
+    width: 100%;
+    margin: auto;
+    padding: 40px;
+    /* border: 2px solid #00ff99; */
+}
+
+/* Hero Section */
+.hero9 {
+    text-align: left;
+    margin-bottom: 40px;
+}
+
+.hero9 > h3 {
+    background: linear-gradient(to left, #00D4FF, #00ffcc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 20px;
+}
+
+.hero9 h1 {
+    font-size: 36px;
+    font-weight: bold;
+    background: linear-gradient(to right, #00D4FF, #00ff99, #ffffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero9 p {
+    font-size: 13px;
+    opacity: 0.8;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 5px;
+   
+}
+
+/* Savings Section */
+.savings {
+    display: flex;
+    justify-content: flex-end;
+     position: relative;
+     bottom: 20px;
+}
+
+.savings-box {
+    background: #101010;
+    padding: 5px 0px 0px 0px;
+    border-radius: 8px;
+    /* width: 280px;  */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.savings-box p {
+    font-size: 16px;
+    margin: 50px 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+.savings-box ul {
+    list-style: none;
+    padding: 0;
+    align-self: flex-start;
+    margin: 0;
+}
+
+.savings-box li {
+    font-size: 12px;
+
+}
+
+
+.highlight {
+    background: linear-gradient(to right, #00ff99, #ffffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Features Section */
+.features9 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.feature9 {
+    background: #121212;
+    padding: 20px;
+    border-radius: 8px;
+    width: 30%;
+}
+
+.feature9 h2 {
+    font-size: 18px;
+}
+
+.feature9 p {
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+/* Clock Icon */
+.clock {
+    width: 100px;
+    margin: 0 0 -40px 10px;
+    transform: rotate(1deg);
+    transform-origin: left;
+}
+
+
+
+
+/* Styling frimly footer */
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px;
+    background-color: #000;
+}
+
+.footer div {
+    flex: 1;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.footer p {
+    margin: 5px 0;
+}
+
+.footer-text p {
+    font-size: 24px;
+}
+
+.footer-text .logo {
+    font-size: 28px;
+    font-weight: 800;
+}
+
+.column-text a {
+    font-size: 24px;
+}
+
+.column-text .column-title {
+    font-size: 28px;
+    font-weight: 800;
+}
+
+.footer img {
+    width: 20px;
+    margin-top: 10px;
+}
+
+.footer .column-title {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.container-column {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.copyright {
+    text-align: center;
+    padding: 10px;
+    font-size: 12px;
+    background-color: #000;
+}
+
+/* styling Trimly footer ends */
 
 
 
