@@ -2,6 +2,115 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    background: #000;
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-links .btn {
+    background: linear-gradient(to bottom, #00FF95, #00D4FF);
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.hero-content {
+    max-width: 50%;
+}
+
+.hero-content h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.cta-button {
+    background: linear-gradient(to bottom, #00FF95, #00D4FF);
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #0d0d0d;
+}
+
+/* Stats Section */
+.stats-section {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.stats-box {
+    padding: 20px;
+    text-align: center;
+    width: 30%;
+}
+
+.stats-box h2 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.stats-box p {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.trusted-box h2 {
+    text-align: center;
+    margin-top: -30px;
+}
+
+.highlight {
+    background: linear-gradient(to bottom, #00FF95, #00D4FF);
+    -webkit-background-clip: text;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -1161,10 +1270,6 @@ h1 {
 
 
 
-
-
-
-
 /* MEDIA QUERIES FOR RESPONSIVENESS */
 @media screen and (max-width: 768px) {
     /* Adjust Navbar for Mobile */
@@ -1238,4 +1343,125 @@ h1 {
         padding: 15px;
         font-size: 18px;
     }
+
+    /* Additional adjustments for other sections */
+    .hero-content .subheading {
+        font-size: 24px;
+    }
+
+    .stats-box {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .feature-card, .feature-card4, .feature-card5, .feature-card6, .feature-card7 {
+        width: 100%;
+    }
+
+    .container8, .container9 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .left, .right {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .buttons {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer div {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .footer .logo {
+        margin-bottom: 20px;
+    }
 }
+
+
+/* MEDIA QUERIES FOR RESPONSIVENESS */
+/* @media screen and (max-width: 768px) { */
+    /* Adjust Navbar for Mobile */
+    /* .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: white;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    /* Stack Sections on Mobile */
+    /* .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-content {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .hero-image {
+        display: flex;
+        justify-content: center;
+    }
+
+    .stats-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .stats-numbers {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .carousel-container {
+        flex-direction: column;
+    }
+
+    .testimonial-card {
+        max-width: 100%;
+    }
+
+    .hero5, .hero6 {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .mockup-div, .mockup-div4, .mockup-div5, .mockup-div6 {
+        order: -1;
+    } */
+
+    /* Adjust Button Sizes */
+    /* .cta-button, button {
+        width: 100%;
+        padding: 15px;
+        font-size: 18px;
+    }
+}  */
