@@ -1160,64 +1160,82 @@ h1 {
 
 
 
-/* 
-@media (max-width: 768px) {
-    nav {
-        flex-direction: column;
-        align-items: center;
-    }
+
+
+
+
+
+/* MEDIA QUERIES FOR RESPONSIVENESS */
+@media screen and (max-width: 768px) {
+    /* Adjust Navbar for Mobile */
     .nav-links {
+        display: none;
         flex-direction: column;
-        gap: 10px;
+        width: 100%;
+        background-color: white;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    /* Stack Sections on Mobile */
+    .hero {
+        flex-direction: column;
         text-align: center;
     }
-    .features {
+
+    .hero-content {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .hero-image {
+        display: flex;
+        justify-content: center;
+    }
+
+    .stats-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .stats-numbers {
         flex-direction: column;
         align-items: center;
     }
-} */
 
-
-
-/* @media (max-width: 800px) {
-    .page-wrapper {
-        flex: 50%;
-        max-width: 50%;
-
-    }
-
-    .hero {
-        height: 400px;
-        flex: 100%;
+    .carousel-container {
         flex-direction: column;
-        flex-wrap: wrap;
-        border: 10px solid red;
     }
-} */
 
+    .testimonial-card {
+        max-width: 100%;
+    }
 
-
-/* Responsive Design */
-/* @media (max-width: 900px) {
-    .booking-section {
+    .hero5, .hero6 {
         flex-direction: column;
         text-align: center;
     }
 
-    .image-container img {
-        width: 70%;
+    .mockup-div, .mockup-div4, .mockup-div5, .mockup-div6 {
+        order: -1;
     }
 
-    .text-container {
-        max-width: 90%;
+    /* Adjust Button Sizes */
+    .cta-button, button {
+        width: 100%;
+        padding: 15px;
+        font-size: 18px;
     }
-} */
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-/* @media (max-width: 600px) {
-    .hero {
-        flex: 100%;
-        max-width: 100%;
-        flex-direction: column;
-    }
-} */
+}
