@@ -19,10 +19,10 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-.logo {
+/* .logo {
     font-size: 24px;
     font-weight: bold;
-}
+} */
 
 .nav-links {
     list-style: none;
@@ -113,12 +113,12 @@ body {
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
-
+/* 
 body {
     background: #222;
     height: 100vh;
     color: white;
-}
+} */
 
 header {
     background: #222;
@@ -177,7 +177,7 @@ header {
 
 
 /* hamburger menu */
-.ham-menu{
+.ham-menu {
     /* display: none; */
     width: 50px;
     height: 50px;
@@ -185,7 +185,7 @@ header {
     position: relative;
 }
 
-.ham-menu span{
+.ham-menu span {
     width: 100%;
     /* background-color: linear-gradient(to bottom, #00FF95, #00D4FF); */
     background: #00FF95;
@@ -193,7 +193,7 @@ header {
     border-radius: 25px;
 }
 
-.ham-menu span:nth-child(1){
+.ham-menu span:nth-child(1) {
     top: 10px;
 
 }
@@ -1112,7 +1112,7 @@ h1 {
     margin-bottom: 40px;
 }
 
-.hero9 > h3 {
+.hero9>h3 {
     background: linear-gradient(to left, #00D4FF, #00ffcc);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -1132,15 +1132,15 @@ h1 {
     opacity: 0.8;
     font-family: 'Montserrat', sans-serif;
     margin-bottom: 5px;
-   
+
 }
 
 /* Savings Section */
 .savings {
     display: flex;
     justify-content: flex-end;
-     position: relative;
-     bottom: 20px;
+    position: relative;
+    bottom: 20px;
 }
 
 .savings-box {
@@ -1377,279 +1377,260 @@ h1 {
 
 
 
+@media (min-width: 481px) and (max-width: 767px) {
+    /* Your styles here */
+
+    body{
+        /* border: 5px solid #00FF95; */
+        margin: 0;
+        padding: 0;
+        width: 100vw;
+        height: 100vh;
+        /* background: #fff;
+        color: #000; */
+    }
+
+    .logo {
+        font-size: 1px;
+        font-weight: bold;
+    }
+
+    #navbar{
+        /* border: 2px solid red; */
+        top: 0px;
+        position: fixed;
+    }
 
 
-/* MEDIA QUERIES FOR RESPONSIVENESS */
-@media screen and (max-width: 768px) {
-    /* Adjust Navbar for Mobile */
-    .nav-links {
+
+    .navbar .nav-links {
         display: none;
         flex-direction: column;
         width: 100%;
-        background-color: #000;
+        background-color: #fff;
         position: absolute;
-        top: 60px;
+        top: 0;
         left: 0;
         text-align: center;
         padding: 10px 0;
+        /* border: 2px solid red; */
     }
 
-    .nav-links.active {
+    .hero{
         display: flex;
-    }
-
-    .menu-toggle {
-        display: block;
-    }
-
-    /* Stack Sections on Mobile */
-    .hero {
         flex-direction: column;
-        text-align: center;
+        margin: 200px 15px;
+        width:  650px;
+        /* border: 2px solid red; */
+        padding: 0;
+        /* justify-content: center;
+        align-items: center; */
     }
 
-    .hero-content {
+    .hero > .hero-content{
+        /* border: 2px solid #00D4FF; */
         max-width: 100%;
-        padding: 10px;
-    }
-
-    .hero-image {
+        margin: 10px;
+        padding: 5px;
         display: flex;
+        flex-direction: column;
         justify-content: center;
-    }
-
-    .stats-section {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .stats-numbers {
-        flex-direction: column;
         align-items: center;
     }
 
-    .carousel-container {
-        flex-direction: column;
+    .hero > .hero-content > .subheading{
+       font-size: 25px;
     }
-
-    .testimonial-card {
-        max-width: 100%;
-    }
-
-    .hero5, .hero6 {
-        flex-direction: column;
+    .hero > .hero-content > h2{
+        font-size: 55px;
         text-align: center;
-    }
+     }
 
-    .mockup-div, .mockup-div4, .mockup-div5, .mockup-div6 {
-        order: -1;
-    }
-
-    /* Adjust Button Sizes */
-    .cta-button, button {
-        width: 100%;
+     .hero > .hero-content > p{
+        font-size: 25px;
+        text-align: center;
         padding: 15px;
-        font-size: 18px;
-    }
+     }
 
-    /* Additional adjustments for other sections */
-    .hero-content .subheading {
-        font-size: 24px;
-    }
+    
 
-    .stats-box {
-        width: 100%;
-        margin-bottom: 20px;
-    }
-
-    .feature-card, .feature-card4, .feature-card5, .feature-card6, .feature-card7 {
-        width: 100%;
-    }
-
-    .container8, .container9 {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .left, .right {
-        width: 100%;
-        padding: 20px;
-    }
-
-    .buttons {
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .footer {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .footer div {
-        width: 100%;
-        margin-bottom: 20px;
-    }
-
-    .footer .logo {
-        margin-bottom: 20px;
-    }
+.hero-image {
+    position: relative;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-@media screen and (max-width: 480px) {
-    /* Adjust Navbar for Mobile */
-    .nav-links {
-        display: none;
-        flex-direction: column;
+/* .hero-image::before {
+    content: "";
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    background: linear-gradient(to bottom, #00FF95, #00D4FF);
+    ;
+    border-radius: 50%;
+    z-index: -1;
+} */
+
+.hero-image video {
+    width: 95%;
+    height: auto;
+    border-radius: 20px;
+    background-clip: inherit;
+    border: 25px solid red;
+    margin-top: 100px;
+   
+}
+
+/* stats Section */
+.stats-section{
+    /* max-width: 1700px;
+    margin: 50px 70px; */
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: center;
+    align-items: center;
+    border: 2px solid yellow; */
+
+    max-width: 100%;
+    margin: 10px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.stats-section >.stats-container {
+    display: flex;
+    flex-direction: column;
+    width: 650px;
+    justify-content: space-between;
+    align-items: center;
+    /* max-width: 1200px; */
+    /* width: 100%; */
+    margin: 0 auto;
+    padding: 20px;
+   
+    border-radius: 10px;
+}
+.stats-section >.stats-container >.stats-box {
+    /* padding: 20px; */
+    /* border: 2px solid green; */
+    width: 100%;
+    justify-content: stretch;
+    padding: 30px;
+}
+
+.stats-section >.stats-container >.stats-box h2  {
+   font-size: 100px;
+   text-transform: capitalize;
+}
+
+.stats-section >.stats-container > .stats-box .box-text p  {
+    font-size: 30px;
+    /* text-transform: capitalize; */
+ }
+
+.stats-section >.stats-container >.stats-box .highlight{
+   font-size: 35px;
+}
+
+
+.stats-container > .signature-img{
+    margin: 100px;
+    width: 200px;
+    transform: rotate(90deg);
+ }
+
+
+
+
+.stats-container > .trusted-box > h2{
+    text-align: start;    
+}
+
+.stats-numbers{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    position: relative;
+    left: 100px;
+
+}
+
+.stats-numbers h3{
+   font-size: 32px;
+   /* margin-left:  70px; */
+}
+
+.stats-numbers p{
+    font-size: 25px;
+    /* margin-left:  70px; */
+ }
+
+
+ .carousel-container button{
+    display: none;
+ }
+
+ .carousel{
+   
+    display: flex;
+    flex-direction: column;
+    
+    margin-left: 50px;
+   
+   
+ }
+ .carousel > .testimonial-card{
+    /* border: 2px solid #00FF95; */
+     width: 400px;
+     height: 600px;
+    z-index: 2;
+    /* padding: 0; */
+ }
+
+ .hero2 .heading2{
+    /* font-size: 40px; */
+    /* margin: 1px 0px 80px; */
+    white-space: nowrap;
+    text-align: center;
+    margin-left: 50px;
+   
+   
+ }
+
+ .card-container .negative{
+    margin-left: 10px;
+ }
+
+ section .hero3 {
+    display: flex;
+    flex-direction: column-reverse;
+ }
+
+ .hero3 .mockup-div{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 5px;
+ }
+
+    .hero3 .mockup-div img{
+        display: contents;
         width: 100%;
-        background-color: #000;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        text-align: center;
-        padding: 10px 0;
+        max-width: 400px;
+        border-radius: 20px;
     }
 
-    .nav-links.active {
-        display: flex;
-    }
 
-    .menu-toggle {
-        display: block;
-    }
 
-    /* Stack Sections on Mobile */
-    .hero {
-        flex-direction: column;
-        text-align: center;
-    }
 
-    .hero-content {
-        max-width: 100%;
-        padding: 10px;
-    }
-
-    .hero-image {
-        display: flex;
-        justify-content: center;
-    }
-
-    .stats-section {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .stats-numbers {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .carousel-container {
-        flex-direction: column;
-    }
-
-    .testimonial-card {
-        max-width: 100%;
-    }
-
-    .hero5, .hero6 {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .mockup-div, .mockup-div4, .mockup-div5, .mockup-div6 {
-        order: -1;
-    }
-
-    /* Adjust Button Sizes */
-    .cta-button, button {
-        width: 100%;
-        padding: 15px;
-        font-size: 16px;
-    }
-
-    /* Additional adjustments for other sections */
-    .hero-content .subheading {
-        font-size: 20px;
-    }
-
-    .stats-box {
-        width: 100%;
-        margin-bottom: 20px;
-    }
-
-    .feature-card, .feature-card4, .feature-card5, .feature-card6, .feature-card7 {
-        width: 100%;
-    }
-
-    .container8, .container9 {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .left, .right {
-        width: 100%;
-        padding: 10px;
-    }
-
-    .buttons {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .footer {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .footer div {
-        width: 100%;
-        margin-bottom: 10px;
-    }
-
-    .footer .logo {
-        margin-bottom: 10px;
-    }
-
-    .hero-content h2 {
-        font-size: 24px;
-    }
-
-    .hero-content p {
-        font-size: 16px;
-    }
-
-    .stats-box h2 {
-        font-size: 32px;
-    }
-
-    .stats-box p {
-        font-size: 18px;
-    }
-
-    .highlight {
-        font-size: 16px;
-    }
-
-    .feature9 h2 {
-        font-size: 16px;
-    }
-
-    .feature9 p {
-        font-size: 12px;
-    }
-
-    .hero9 h1 {
-        font-size: 28px;
-    }
-
-    .hero9 p {
-        font-size: 12px;
-    }
 }
